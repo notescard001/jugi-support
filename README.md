@@ -1,19 +1,18 @@
 # jugi-support
 
-聚启（Jugi）的**公开页面仓库**。存在的唯一理由是：App Store Connect 要求填两个
-公开可达的 URL（隐私政策、支持），而这两个 URL 必须能在不登录的情况下打开。
+聚启（Jugi）的隐私政策与支持页，托管在 GitHub Pages：
 
-- `privacy-policy.md` → 隐私政策 URL
-- `support.md` → 支持 URL
+- [隐私政策 / Privacy Policy](https://notescard001.github.io/jugi-support/privacy-policy.html)
+- [支持与常见问题 / Support & FAQ](https://notescard001.github.io/jugi-support/support.html)
 
-**这两个文件是生成物，不要直接改。** 正文的真源在私有仓库
-`docs/appstore/` 里，改完那边跑：
+这两个地址填在 App Store 的商品页上，不需要登录即可打开。
+
+**页面内容是生成物，不要直接改。** 真源在私有仓库的 `docs/appstore/` 里，
+改完那边跑：
 
 ```bash
 ./build.sh /path/to/jugi/docs/appstore
 ```
 
-为什么坚持生成而不是手抄：手工复制迟早会让公开页面和真源对不上，而
-「支持页上写着某个功能、包里却没有」正是 App Store 审核 2.3.1 的典型拒审理由。
-
-应用本身的源码不在这个仓库里，也不打算公开。
+之所以是生成而不是手抄：手工复制迟早会让公开页面和真源对不上，
+用户看到的就成了不实信息。
